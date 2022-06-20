@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- task: katalonTask@1
+  inputs:
+    version: '8.0.5'
+    executeArgs: ' -retry=0 -testSuitePath="Test Suites/test maximize windows" -browserType="Chrome" -executionProfile="default" -apiKey="ce1504db-a920-429e-92da-894ead237b33" --config  -webui.autoUpdateDrivers=true'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
