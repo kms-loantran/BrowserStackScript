@@ -21,7 +21,7 @@ steps:
 - task: katalonTask@1
   inputs:
     version: '8.0.5'
-    executeArgs: ' -retry=0 -testSuitePath="Test Suites/test maximize windows" -browserType="Chrome" -executionProfile="default" -apiKey="ce1504db-a920-429e-92da-894ead237b33" --config  -webui.autoUpdateDrivers=true'
+    executeArgs: ' -retry=0 -testSuitePath="Test Suites/test maximize windows" -browserType="Chrome" -executionProfile="default" -apiKey="ce1504db-a920-429e-92da-894ead237b33" -testOps.serverUrl="https://testops.katalon.io" -orgID=89151 --config  -webui.autoUpdateDrivers=true'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
