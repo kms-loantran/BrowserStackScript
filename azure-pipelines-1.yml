@@ -6,13 +6,13 @@
 trigger:
 - master
 
-#pool:
-#  vmImage: windows-latest
-
 pool:
-  name: vicky
-  demands:
-   - agent.Name -equals vickyWindowsSelfHosted
+  vmImage: windows-latest
+
+#pool:
+#  name: vicky
+#  demands:
+#   - agent.Name -equals vickyWindowsSelfHosted
 
 steps:
 - script: echo Hello, world!
