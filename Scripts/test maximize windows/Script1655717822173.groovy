@@ -17,11 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.openBrowser('https://katalon.com/')
 
-WebUI.navigateToUrl('https://katalon.com/')
+//WebUI.navigateToUrl()
 
-WebUI.maximizeWindow()
+WebUI.maximizeWindow(FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Object Repository/Page_Katalon  Simplify Web, API, Mobile, De_2f1b85/span_Get Started'))
 

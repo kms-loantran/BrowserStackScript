@@ -6,7 +6,7 @@
    <UUID>42aaa6cf-7dc4-49bb-b0ad-7563f68765e1</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/loantran/Downloads/loan test broser start/loan test broser start.prj</projectFileLocation>
+   <projectFileLocation>/Users/loantran/Downloads/BrowserStackScript/loan test broser start.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
