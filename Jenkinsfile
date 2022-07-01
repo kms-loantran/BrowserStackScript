@@ -4,7 +4,7 @@ pipeline {
         stage('Test') {
             steps {
                 dir('/Users/loantran/Downloads/BrowserStackScript'){
-                    sh 'docker run -t --rm -v $(which docker):/usr/local/bin/docker "$(pwd)":/tmp/project katalonstudio/katalon katalonc.sh -projectPath=/tmp/project -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/test maximize windows" -executionProfile="default" -apiKey="ce1504db-a920-429e-92da-894ead237b33"'
+                    sh 'docker run -t --rm -v "$(pwd)":/tmp/project katalonstudio/katalon katalonc.sh -projectPath=/tmp/project -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/test maximize windows" -executionProfile="default" -apiKey="ce1504db-a920-429e-92da-894ead237b33"'
                 }
             }
         }
