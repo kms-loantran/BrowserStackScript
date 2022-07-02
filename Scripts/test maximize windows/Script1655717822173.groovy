@@ -19,8 +19,6 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://katalon.com/')
 
-//WebUI.navigateToUrl()
-
 WebUI.maximizeWindow(FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Object Repository/Page_Katalon  Simplify Web, API, Mobile, De_2f1b85/span_Get Started'))
