@@ -20,7 +20,7 @@ steps:
 
 - task: katalonTask@1
   inputs:
-    location: 'C:\Users\VssAdministrator\.katalon\8.3.5\Katalon_Studio_Engine_Windows_64-8.3.5'
+    location: '/var/lib/azureDevops KatalonStudioWindows_64-5.10.1'
     executeArgs: '-retry=0 -testSuitePath="Test Suites/test maximize windows" -browserType="Chrome" -executionProfile="default" -apiKey="ce1504db-a920-429e-92da-894ead237b33" -testOps.serverUrl="https://testops.katalon.io" -orgID=89151 --config  -webui.autoUpdateDrivers=true'
 
 #- task: katalonTask@1
