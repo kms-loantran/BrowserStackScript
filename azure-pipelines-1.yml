@@ -6,28 +6,23 @@
 trigger:
 - master
 
-pool:
-  vmImage: windows-2022
-
 #pool:
-#  name: vicky
-#  demands:
-#   - agent.Name -equals vickyWindowsSelfHosted
+#  vmImage: windows-2022
+
+
+pool:
+  name: vicky
+  demands:
+   - agent.Name -equals vickyWindowsSelfHosted
 
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: |
-    echo hahaha hahah hahaha
-    echo $(Build.ArtifactStagingDirectory)
-    echo $(agent.buildDirectory)
-  displayName: 'vickyyyyyy'
-
-#- task: katalonTask@1
-#  inputs:
-#    location: '/var/lib/azureDevops KatalonStudioWindows_64-8.3.5'
-#    executeArgs: '-retry=0 -testSuitePath="Test Suites/test maximize windows" -browserType="Chrome" -executionProfile="default" -apiKey="ce1504db-a920-429e-92da-894ead237b33" -testOps.serverUrl="https://testops.katalon.io" -orgID=89151 --config  -webui.autoUpdateDrivers=true'
+- task: katalonTask@1
+  inputs:
+    location: 'C:\Users\revenue\.katalon\8.3.5\Katalon_Studio_Engine_Windows_64-8.3.5'
+    executeArgs: '-retry=0 -testSuitePath="Test Suites/test maximize windows" -browserType="Chrome" -executionProfile="default" -apiKey="ce1504db-a920-429e-92da-894ead237b33" -testOps.serverUrl="https://testops.katalon.io" -orgID=89151 --config  -webui.autoUpdateDrivers=true'
 
 ##- task: katalonTask@1
 ##  inputs:
