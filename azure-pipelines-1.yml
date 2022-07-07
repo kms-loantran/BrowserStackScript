@@ -16,8 +16,8 @@ pool:
 
 steps:
 - script: echo Hello, world!
-  cd 'C:\Users\VssAdministrator\.katalon\8.3.5\Katalon_Studio_Engine_Windows_64-8.3.5'
-  ls -al
+    cd 'C:\Users\VssAdministrator\.katalon\8.3.5\Katalon_Studio_Engine_Windows_64-8.3.5'
+    ls -al
   displayName: 'Run a one-line script'
 
 - task: katalonTask@1
