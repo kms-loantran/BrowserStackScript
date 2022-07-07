@@ -19,9 +19,16 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
+    echo hahaha hahah hahaha
     cd 'C:\Users\VssAdministrator\.katalon'
     ls -al
-  displayName: 'loan check existing KRE package'
+  displayName: 'loan check existing KRE package 1'
+
+- script: |
+    echo huhuhuhuhuhuhu
+    cd '/var/lib'
+    ls -al
+  displayName: 'loan check existing KRE package 2'
 
 #- task: katalonTask@1
 #  inputs:
