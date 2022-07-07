@@ -20,6 +20,9 @@ steps:
 
 - script: |
     echo hahaha hahah hahaha
+    echo $(Build.Repository.LocalPath)
+    echo $(pwd)
+    echo $(Build.ArtifactStagingDirectory)
     cd $(pwd)
     ls -al
   displayName: 'vickyyyyyy'
