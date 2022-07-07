@@ -20,7 +20,7 @@ steps:
 
 - script: |
     echo hahaha hahah hahaha
-    cd 'C:\Users\VssAdministrator\.katalon'
+    cd 'C:\\Users\\VssAdministrator\\.katalon'
     ls -al
   displayName: 'loan check existing KRE package 1'
 
