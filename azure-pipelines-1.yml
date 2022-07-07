@@ -20,15 +20,9 @@ steps:
 
 - script: |
     echo hahaha hahah hahaha
-    cd 'C:\\Users\\VssAdministrator\\.katalon'
+    cd $(pwd)
     ls -al
-  displayName: 'loan check existing KRE package 1'
-
-- script: |
-    echo huhuhuhuhuhuhu
-    cd '/var/lib'
-    ls -al
-  displayName: 'loan check existing KRE package 2'
+  displayName: 'vickyyyyyy'
 
 #- task: katalonTask@1
 #  inputs:
