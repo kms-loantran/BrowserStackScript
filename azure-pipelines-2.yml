@@ -14,7 +14,3 @@ steps:
   displayName: 'Pull katalon studio images'
 - script: docker run -t --rm -v "$(pwd)":/tmp/project katalonstudio/katalon katalonc.sh -projectPath=/tmp/project -retry=0 -testSuitePath="Test Suites/test maximize windows" -browserType="Chrome" -executionProfile="default" -apiKey="ce1504db-a920-429e-92da-894ead237b33" -testOps.serverUrl="https://testops.katalon.io" -orgID=89151 --config  -webui.autoUpdateDrivers=true
   displayName: 'Runnning Katalon TS_RegressionTest'
-- task: PublishPipelineArtifact@0
-  inputs:
-    artifactName: 'JUnit Report' 
-    targetPath: report/
